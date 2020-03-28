@@ -172,20 +172,21 @@
 		<finalName>onlinebanking</finalName>
 	</build>
 	<distributionManagement>
-		<repository>
-			<id>nexus-releases</id>
-			<url>http://localhost:9091/nexus/content/repositories/onlinebankingrepo/</url> 
+		<repository> 
+		<id>nexus</id>		
+			<url>http://localhost:9091/nexus/content/repositories/buildonrepo/</url> 
 		</repository>
 		<snapshotRepository>
-			<id>nexus-snapshots</id>
-			<url>http://localhost:9091/nexus/content/repositories/onlinebankingrepo/</url>
+			<id>nexus</id>
+			<url>http://localhost:9091/nexus/content/repositories/buildonrepo/</url>
 		</snapshotRepository>
 	</distributionManagement>
 	<profiles>
         <profile>
                 <id>tomcatDeployment</id>
                 <activation>
-                  <activeByDefault>false</activeByDefault>nexus-snapshotsactivation>
+                  <activeByDefault>false</activeByDefault>
+                </activation>
 
                 <build>
                  <plugins>
