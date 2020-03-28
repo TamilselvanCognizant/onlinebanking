@@ -16,24 +16,7 @@ node {
 
    stage ('Banking_NexusUpload') {
    
-          sh "mvn -B help:evaluate -Dexpression=project.groupId | grep -e '^[^[]' > groupIdFile"
-          groupId=readFile('groupIdFile').trim()
-          
-          sh "mvn -B help:evaluate -Dexpression=project.artifactId | grep -e '^[^[]' > artifactIdFile"
-          artifactId=readFile('artifactIdFile').trim()
-          
-          sh "mvn -B help:evaluate -Dexpression=project.version | grep -e '^[^[]' > versionFile"
-          version=readFile('versionFile').trim()
-       
-          sh "mvn -B help:evaluate -Dexpression=project.build.finalName | grep -e '^[^[]' > finalNameFile"
-          projectName=readFile('finalNameFile').trim()
-
-          sh "mvn -B help:evaluate -Dexpression=project.packaging | grep -e '^[^[]' > packagingFile"
-          packaging=readFile('packagingFile').trim()
-          
-          artifactName="target/${projectName}.${packaging}"
-          
-          sh "mvn deploy:deploy-file -DgroupId=${groupId} -DartifactId=${artifactId} -Dpackaging=${packaging} -Dversion=${version} -DgeneratePom=true -Dfile=${artifactName}"
+          sh "mvn deploy -DskipTests=true"
    }
   
    stage ('Banking_tomcatDeployment') {
