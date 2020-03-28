@@ -171,18 +171,16 @@
     		</pluginManagement>
 		<finalName>onlinebanking</finalName>
 	</build>
-	<!--
 	<distributionManagement>
 		<repository> 
 		<id>nexus</id>		
-			<url>https://insightsplatformnexusrepo.cogdevops.com/nexus/content/repositories/buildonrepo/</url> 
+			<url>http://localhost:9091/nexus/content/repositories/onlinebankingrepo/</url> 
 		</repository>
 		<snapshotRepository>
-			<id>nexus</id>
-			<url>https://insightsplatformnexusrepo.cogdevops.com/nexus/content/repositories/buildonrepo/</url>
+			<id>nexus-snapshots</id>
+			<url>http://localhost:9091/nexus/content/repositories/onlinebankingrepo/</url>
 		</snapshotRepository>
 	</distributionManagement>
--->
 	<profiles>
         <profile>
                 <id>tomcatDeployment</id>
