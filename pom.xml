@@ -173,12 +173,12 @@
 	</build>
 	<distributionManagement>
 		<repository> 
-		<id>nexus</id>		
-			<url>http://localhost:9091/nexus/content/repositories/buildonrepo/</url> 
+		<id>nexus-releases</id>		
+			<url>http://localhost:9091/repository/buildonrepo/</url> 
 		</repository>
 		<snapshotRepository>
-			<id>nexus</id>
-			<url>http://localhost:9091/nexus/content/repositories/buildonrepo/</url>
+			<id>nexus-snapshots</id>
+			<url>http://localhost:9091/repository/buildonrepo/</url>
 		</snapshotRepository>
 	</distributionManagement>
 	<profiles>
