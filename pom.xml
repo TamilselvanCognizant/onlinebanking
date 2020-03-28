@@ -189,18 +189,18 @@
                 </activation>
 
                 <build>
-		<plugin>
-			<groupId>org.apache.tomcat.maven</groupId>
-			<artifactId>tomcat8-maven-plugin</artifactId>
-			<version>5.27</version>
-			<configuration>
-				<url>http://localhost:8080/manager/text</url>
-				<server>TomcatServer</server>
-				<path>/OnlineBanking</path>
-			</configuration>
-		</plugin>
-
-                </plugins>
+			<plugins>
+			<plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat8-maven-plugin</artifactId>
+				<version>5.27</version>
+				<configuration>
+					<url>http://localhost:8080/manager/text</url>
+					<server>TomcatServer</server>
+					<path>/OnlineBanking</path>
+				</configuration>
+			</plugin>
+			</plugins>
                 </build>
         </profile>
         </profiles>
