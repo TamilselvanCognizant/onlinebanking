@@ -172,8 +172,8 @@
 		<finalName>onlinebanking</finalName>
 	</build>
 	<distributionManagement>
-		<repository> 
-			<id>nexus-releases</id>		
+		<repository>
+			<id>nexus-releases</id>
 			<url>http://localhost:9091/nexus/content/repositories/onlinebankingrepo/</url> 
 		</repository>
 		<snapshotRepository>
