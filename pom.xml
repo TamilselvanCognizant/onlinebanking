@@ -173,7 +173,7 @@
 	</build>
 	<distributionManagement>
 		<repository> 
-		<id>nexus</id>		
+			<id>nexus-releases</id>		
 			<url>http://localhost:9091/nexus/content/repositories/onlinebankingrepo/</url> 
 		</repository>
 		<snapshotRepository>
@@ -185,8 +185,7 @@
         <profile>
                 <id>tomcatDeployment</id>
                 <activation>
-                  <activeByDefault>false</activeByDefault>
-                </activation>
+                  <activeByDefault>false</activeByDefault>nexus-snapshotsactivation>
 
                 <build>
                  <plugins>
