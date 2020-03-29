@@ -9,7 +9,7 @@ To run Jenkins pipeline you need the following
 # GitHub:
 https://github.com/TamilselvanCognizant/onlinebanking.git 
 
-Do required changes in pom.xml
+Do required changes in pom.xml (Please refer ###### required_config_files directory)
 
 # Jenkins:
 http://mirrors.jenkins.io/war-stable/latest/jenkins.war 
@@ -21,7 +21,7 @@ java -jar jenkins.war –httpPort=9090
 # Maven: 
 sudo apt install maven -y
 
-do the required changes in settings.xml
+do the required changes in settings.xml (Please refer ###### required_config_files directory)
 
 # SonarQube:
 docker run -d -p 9000:9000 sonarqube
@@ -32,6 +32,6 @@ docker run -d -p 9091:8081 --name nexus sonatype/nexus3
 # Tomcat:
 http://apachemirror.wuchna.com/tomcat/tomcat-7/v7.0.103/bin/apache-tomcat-7.0.103.tar.gz
 
-Do required changes in tomcat-users.xml
+Do required changes in tomcat-users.xml (Please refer ###### required_config_files directory)
 
 localhost:8080/onlinebanking
