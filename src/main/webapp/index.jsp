@@ -73,7 +73,7 @@
 					<div class="span9" style="margin-left: 50px;">
 						<div class="well">
 							<div align="justify">
-								<strong style="color: red;">Hello Rajesh welcome to the world of DevOps; The Strength and Integrity of Relationships</strong><br>
+								<strong style="color: red;">Hey!!!! Rajesh welcome to the world of DevOps; The Strength and Integrity of Relationships</strong><br>
 								<br>
 								<br>
 
